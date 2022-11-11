@@ -1,0 +1,125 @@
+/* Font */
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+    src: url(../Fonts/Quicksand-VariableFont_wght.woff2);
+  }
+
+/* Variables */ 
+:root {
+    /* Color */
+    --color-white:             #ffffff;
+    --color-gray-white:        #F6F6F8;
+    --color-black:             #1D1F24;
+
+    --color-gray-blue:         #8D96BD;
+    --color-gray:              #697CA6;
+    --color-light-gray:        #ADB3CB;
+    --color-gray400:           #999999;
+    --color-background-gray:   #F6F6F8;
+    --color-skyblue:           #D2E1FF;
+    --color-blue:              #5E81FE;
+    --color-dark-blue:         #3D4F9F;
+    --color-pink:              #FFD7D7;
+    --color-red:               #D43F3F;
+
+    
+     /* Font */
+    --font-montserrat: 'Quicksand', sans-serif;
+
+    /* Container */
+    --container-width: 888px;
+
+
+}
+
+@media (max-width: 1365px) {
+    :root {
+        --header-height: 64px;
+    }
+}
+
+@media (max-width: 959px) {
+    :root {
+        --search-height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --header-height: 56px;
+    }
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Tag styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--font-montserrat);
+    line-height: 1.3;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+svg {
+    transition: .2s;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+input {
+    font-family: var(--font-montserrat);
+}
+
+input::placeholder {
+    font-family: var(--font-montserrat);
+}
+
+textarea {
+    font-family: var(--font-montserrat);
+    resize: unset;
+}
+
+textarea::placeholder {
+    font-family: var(--font-montserrat);
+}
+
+i {
+    font-style: normal;
+}
