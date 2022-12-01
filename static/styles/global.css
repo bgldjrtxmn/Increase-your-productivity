@@ -2,7 +2,8 @@
 @font-face {
     font-family: 'Quicksand', sans-serif;
     font-display: swap;
-    src: url(../Fonts/Quicksand-VariableFont_wght.woff2);
+    font-weight: 400 900;
+    src: url(../fonts/Quicksand-VariableFont_wght.woff2);
   }
 
 /* Variables */ 
@@ -11,44 +12,28 @@
     --color-white:             #ffffff;
     --color-gray-white:        #F6F6F8;
     --color-black:             #1D1F24;
-
+    --color-black-gray:        #565F82;
+    --color-sky-light-blue:    #6480E8;
     --color-gray-blue:         #8D96BD;
     --color-gray:              #697CA6;
     --color-light-gray:        #ADB3CB;
+    --color-light-gray-two:    #D1D1E4;
     --color-gray400:           #999999;
     --color-background-gray:   #F6F6F8;
     --color-skyblue:           #D2E1FF;
     --color-blue:              #5E81FE;
     --color-dark-blue:         #3D4F9F;
-    --color-pink:              #FFD7D7;
+    --color-light-blue:        #F5F8FF;
+    --color-pink:              #FFD7D7; 
     --color-red:               #D43F3F;
+    --color-gray-input:        #EFEFF7;
 
-    
+
      /* Font */
-    --font-montserrat: 'Quicksand', sans-serif;
+    --font-quicksand: 'Quicksand', sans-serif;
 
     /* Container */
     --container-width: 888px;
-
-
-}
-
-@media (max-width: 1365px) {
-    :root {
-        --header-height: 64px;
-    }
-}
-
-@media (max-width: 959px) {
-    :root {
-        --search-height: 200px;
-    }
-}
-
-@media (max-width: 767px) {
-    :root {
-        --header-height: 56px;
-    }
 }
 
 *,
@@ -67,7 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-quicksand);
     line-height: 1.3;
     font-size: 14px;
     font-weight: 400;
@@ -85,17 +70,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-}
-
-svg {
-    transition: .2s;
-}
-
 button {
     font-family: inherit;
     border: none;
@@ -104,22 +78,9 @@ button {
 }
 
 input {
-    font-family: var(--font-montserrat);
+    font-family: var(--font-quicksand);
 }
 
 input::placeholder {
-    font-family: var(--font-montserrat);
-}
-
-textarea {
-    font-family: var(--font-montserrat);
-    resize: unset;
-}
-
-textarea::placeholder {
-    font-family: var(--font-montserrat);
-}
-
-i {
-    font-style: normal;
+    font-family: var(--font-quicksand);
 }
